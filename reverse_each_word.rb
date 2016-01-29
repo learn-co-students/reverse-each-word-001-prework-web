@@ -7,7 +7,7 @@ def reverse_each_word(string)
   reversed.join(" ")
 end
 
-def reverse_each_word(string)
+def reverse_each_word(string) #less complex, more simplified compared to above method
   reversed = []
   string.split.each do |word|
      reversed << word.reverse
