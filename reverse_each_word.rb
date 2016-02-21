@@ -1,5 +1,4 @@
 require 'pry'
-=begin
 
 def reverse_each_word(word)
 	collection = []
@@ -11,12 +10,13 @@ def reverse_each_word(word)
 	collection2.join(" ")
 end
 
-=end
-
+=begin
 def reverse_each_word(word)
 	collection =[]
 	collection = word.split(" ")
 	collection.collect do |x|
 		x.reverse
 	end
+	collection.join(" ")
 end
+=end
