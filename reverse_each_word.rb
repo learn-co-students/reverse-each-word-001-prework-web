@@ -16,3 +16,13 @@ def reverse_each_word(str)
   end
   reversed_string.join(" ")
 end
+
+# Learn.co solution:
+# sentence.split returns an array
+# calling .collect on that array retuns a new array after calling the block
+# on every element
+# then lastly .join(" ") joins the array of reversed words
+#
+# def reverse_each_word(sentence)
+#   sentence.split.collect {|word| word.reverse}.join(" ")
+# end
