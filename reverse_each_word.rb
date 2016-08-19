@@ -1,9 +1,5 @@
-
-#http://stackoverflow.com/questions/11590070/reverse-a-words-in-string-without-change-in-order-and-also-number-of-blank-space
-#You start out with two strings, but strings don't take enumerators, so, first, you have to convert the string into an array.
-#Split: Divides a string into substrings based on a delimiter -- Here your delimiter is (" ")
-#Collect: Creates a new array containing the values returned by the block.
-#Each: calls the block, and passes that element as a parameter.
+#If you want the transformations to be reflected in the return value use map or collect.
+#If you want to return the original return value use each.
 def reverse_each_word(string)
 string = string.split(" ")
 sentence1 = string.each {|a| a.reverse}
@@ -22,3 +18,9 @@ end
 #Invokes the given block once for each element of self.
 #Creates a new array containing the values returned by the block.
 #If no block is given, an Enumerator is returned instead.
+
+#http://stackoverflow.com/questions/11590070/reverse-a-words-in-string-without-change-in-order-and-also-number-of-blank-space
+#You start out with two strings, but strings don't take enumerators, so, first, you have to convert the string into an array.
+#Split: Divides a string into substrings based on a delimiter -- Here your delimiter is (" ")
+#Collect: Creates a new array containing the values returned by the block.
+#Each: calls the block, and passes that element as a parameter.
