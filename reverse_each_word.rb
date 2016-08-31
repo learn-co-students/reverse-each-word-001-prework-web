@@ -6,6 +6,3 @@ def reverse_each_word(sentence)
   end
   new_array.join(' ')
 end
-
-test_sentence = "This is a test, to see if this will work!"
-reverse_each_word(test_sentence)
